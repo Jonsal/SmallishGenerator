@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:SmallishGenerator" 
+	x:Class="SmallishGenerator.SmallishGeneratorPage"
+	Title="Småländskageneratorn">
+	
+	<StackLayout Padding="20,20,20,100" Margin="30">
+
+		<Label x:Name="mainLabel"
+         Text="Småländskageneratorn"
+         HorizontalTextAlignment="Center"
+		 IsVisible="true"
+         FontSize="Large"
+         FontAttributes="Bold"/>
+		
+		<Image Source="linnea.jpg" />
+		
+		<Label x:Name="swedishLabel"
+	         Text="Vad vill du översätta?"
+	         HorizontalTextAlignment="Center"
+			 IsVisible="true"
+	         FontSize="Large"
+	         FontAttributes="Bold"/>
+
+		<Entry x:Name="entry"
+			Text="" />
+
+		<Frame BackgroundColor = "Color.White"
+		    HeightRequest = "1"
+		    MinimumHeightRequest = "1"
+		    HasShadow = "false" />
+		
+		<Label x:Name="resultText"
+			 Text="Blir på småländska:" 
+			 HorizontalTextAlignment="Center"
+			 IsVisible="true"
+	         FontSize="Large"
+	         FontAttributes="Bold"/>
+
+		<Label x:Name="result"
+			Text="" />
+
+		<Frame BackgroundColor = "Color.White"
+		    HeightRequest = "1"
+		    MinimumHeightRequest = "1"
+		    HasShadow = "false" />
+
+		<Button x:Name="button"
+			Text="Click Me!"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand" 
+			FontSize="Large"
+		    Clicked="OnButtonClicked" />
+		
+	</StackLayout>
+</ContentPage>
